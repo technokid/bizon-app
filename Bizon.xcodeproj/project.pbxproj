@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159818932C57C1A800BB46ED /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159818922C57C1A800BB46ED /* Webservice.swift */; };
+		159818952C57C1C800BB46ED /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159818942C57C1C800BB46ED /* Account.swift */; };
+		159818982C57C53D00BB46ED /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159818972C57C53D00BB46ED /* LoginViewModel.swift */; };
 		D9778E592C52B8EA00F1B69F /* BizonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9778E582C52B8EA00F1B69F /* BizonApp.swift */; };
 		D9778E5B2C52B8EA00F1B69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9778E5A2C52B8EA00F1B69F /* ContentView.swift */; };
 		D9778E5D2C52B8F000F1B69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9778E5C2C52B8F000F1B69F /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 
 /* Begin PBXFileReference section */
 		152A5DF12C53DB5100F63712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		159818922C57C1A800BB46ED /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		159818942C57C1C800BB46ED /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		159818972C57C53D00BB46ED /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D9778E552C52B8EA00F1B69F /* Bizon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bizon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9778E582C52B8EA00F1B69F /* BizonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizonApp.swift; sourceTree = "<group>"; };
 		D9778E5A2C52B8EA00F1B69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,7 @@
 		152A5DEC2C53D88600F63712 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				159818922C57C1A800BB46ED /* Webservice.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -43,6 +50,7 @@
 		152A5DED2C53D89400F63712 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				159818942C57C1C800BB46ED /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -68,6 +76,14 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		159818962C57C52700BB46ED /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				159818972C57C53D00BB46ED /* LoginViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		D9778E4C2C52B8EA00F1B69F = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +103,7 @@
 		D9778E572C52B8EA00F1B69F /* Bizon */ = {
 			isa = PBXGroup;
 			children = (
+				159818962C57C52700BB46ED /* View Models */,
 				152A5DF12C53DB5100F63712 /* Info.plist */,
 				152A5DF02C53D8C400F63712 /* Modules */,
 				152A5DEF2C53D8A600F63712 /* Controllers */,
@@ -180,7 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9778E5B2C52B8EA00F1B69F /* ContentView.swift in Sources */,
+				159818952C57C1C800BB46ED /* Account.swift in Sources */,
 				D9778E592C52B8EA00F1B69F /* BizonApp.swift in Sources */,
+				159818982C57C53D00BB46ED /* LoginViewModel.swift in Sources */,
+				159818932C57C1A800BB46ED /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
