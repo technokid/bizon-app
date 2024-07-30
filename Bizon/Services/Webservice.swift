@@ -20,7 +20,7 @@ enum NetworkError: Error {
 }
 
 struct LoginRequestBody: Codable {
-    let username: String
+    let email: String
     let password: String
 }
 
@@ -63,15 +63,15 @@ class Webservice {
     }
     
     
-    func login(username: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
-        
+    func login(email: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
+
         guard let url = URL(string: "https://api.bizonhub.dev/login") else {
             completion(.failure(.custom(errorMessage: "URL is not correct")))
             return
         }
         
-        let body = LoginRequestBody(username: username, password: password)
-        
+        let body = LoginRequestBody(email: email, password: password)
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
