@@ -8,6 +8,6 @@
 import Foundation
 
 struct Login {
-    var email: String = ""
+    var phone: String = ""
     var password: String = ""
 }

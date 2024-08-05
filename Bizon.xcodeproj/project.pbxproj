@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152E39C22C61631C00462921 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E39C12C61631C00462921 /* RegisterController.swift */; };
+		152E39C42C61633300462921 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E39C32C61633300462921 /* Register.swift */; };
+		152E39C62C61646500462921 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E39C52C61646500462921 /* AuthService.swift */; };
 		1561DA2F2C59704700F0C50F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561DA2E2C59704700F0C50F /* LoginController.swift */; };
 		1561DA312C59714900F0C50F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561DA302C59714900F0C50F /* Login.swift */; };
 		1561DA332C59751300F0C50F /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561DA322C59751300F0C50F /* ProfileController.swift */; };
 		1561DA3A2C597CC200F0C50F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561DA392C597CC200F0C50F /* RegisterView.swift */; };
 		1561DA3D2C5985E200F0C50F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561DA3C2C5985E200F0C50F /* ForgotPasswordView.swift */; };
-		159818932C57C1A800BB46ED /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159818922C57C1A800BB46ED /* Webservice.swift */; };
 		159818952C57C1C800BB46ED /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159818942C57C1C800BB46ED /* Account.swift */; };
 		D9778E592C52B8EA00F1B69F /* BizonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9778E582C52B8EA00F1B69F /* BizonApp.swift */; };
 		D9778E5B2C52B8EA00F1B69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9778E5A2C52B8EA00F1B69F /* ContentView.swift */; };
@@ -22,12 +24,14 @@
 
 /* Begin PBXFileReference section */
 		152A5DF12C53DB5100F63712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		152E39C12C61631C00462921 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		152E39C32C61633300462921 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		152E39C52C61646500462921 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1561DA2E2C59704700F0C50F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		1561DA302C59714900F0C50F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1561DA322C59751300F0C50F /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		1561DA392C597CC200F0C50F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1561DA3C2C5985E200F0C50F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		159818922C57C1A800BB46ED /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		159818942C57C1C800BB46ED /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		D9778E552C52B8EA00F1B69F /* Bizon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bizon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9778E582C52B8EA00F1B69F /* BizonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizonApp.swift; sourceTree = "<group>"; };
@@ -50,7 +54,7 @@
 		152A5DEC2C53D88600F63712 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				159818922C57C1A800BB46ED /* Webservice.swift */,
+				152E39C52C61646500462921 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -60,6 +64,7 @@
 			children = (
 				159818942C57C1C800BB46ED /* Account.swift */,
 				1561DA302C59714900F0C50F /* Login.swift */,
+				152E39C32C61633300462921 /* Register.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 			children = (
 				1561DA2E2C59704700F0C50F /* LoginController.swift */,
 				1561DA322C59751300F0C50F /* ProfileController.swift */,
+				152E39C12C61631C00462921 /* RegisterController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,13 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152E39C22C61631C00462921 /* RegisterController.swift in Sources */,
+				152E39C42C61633300462921 /* Register.swift in Sources */,
 				1561DA312C59714900F0C50F /* Login.swift in Sources */,
+				152E39C62C61646500462921 /* AuthService.swift in Sources */,
 				D9778E5B2C52B8EA00F1B69F /* ContentView.swift in Sources */,
 				1561DA2F2C59704700F0C50F /* LoginController.swift in Sources */,
 				159818952C57C1C800BB46ED /* Account.swift in Sources */,
 				D9778E592C52B8EA00F1B69F /* BizonApp.swift in Sources */,
 				1561DA3A2C597CC200F0C50F /* RegisterView.swift in Sources */,
-				159818932C57C1A800BB46ED /* Webservice.swift in Sources */,
 				1561DA3D2C5985E200F0C50F /* ForgotPasswordView.swift in Sources */,
 				1561DA332C59751300F0C50F /* ProfileController.swift in Sources */,
 			);
