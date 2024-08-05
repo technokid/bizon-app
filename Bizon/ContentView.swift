@@ -15,14 +15,8 @@ struct ContentView: View {
         ZStack {
             Color(red: 245/255, green: 245/255, blue: 245/255)
                 .edgesIgnoringSafeArea(.all)
-            Image("logo")
-                .scaleEffect(animate ? 4 :1)
-                .opacity(animate ? 0 : 1)
-                .onAppear{
-                    animate.toggle()
-                }
-                .animation(.easeInOut, value: animate)
-            
+
+
             VStack {
                 Image("logo")
                     .resizable()
@@ -49,10 +43,10 @@ struct ContentView: View {
                 }
                 VStack {
                     Section (header: HStack {
-                        Text("Електрона пошта")
+                        Text("Номер телефону")
                         Spacer()
                     }) {
-                        TextField("Email", text: $login.login.email)
+                        TextField("Введіть номер телефону", text: $login.login.phone)
                             .padding()
                             .keyboardType(.emailAddress)
                             .background(Color.white)
@@ -63,7 +57,7 @@ struct ContentView: View {
                         Text("Пароль")
                         Spacer()
                     }) {
-                        SecureField("Password", text: $login.login.password)
+                        SecureField("Введіть пароль", text: $login.login.password)
                             .padding()
                             .border(Color.gray, width: 1)
                             .background(Color.white)
@@ -96,9 +90,6 @@ struct ContentView: View {
                 
             }
             .padding()
-            .opacity(animate ? 1 : 0)
-            .animation(.easeOut.delay(0.15), value: animate)
-            .onAppear(perform: {})
             //.embedInNavigationView()
         }
         

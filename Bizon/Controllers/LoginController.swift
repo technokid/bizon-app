@@ -20,7 +20,24 @@ class LoginController: ObservableObject {
     }
 
     func validateLogin () -> Bool {
-        return login.email.isEmpty
+        if login.phone.isEmpty {
+            return false
+        }
+        if login.phone.count != 12 {
+            return false
+        }
+
+        let pattern = "^[0-9]{12}$"
+
+        if let regex = try? NSRegularExpression(pattern: pattern) {
+            let range = NSRange(location: 0, length: login.phone.utf16.count)
+
+            if let _ = regex.firstMatch(in: login.phone, options: [], range: range) {
+                return true
+            }
+        }
+
+        return false
     }
 
     func validatePassword () -> Bool {
@@ -32,7 +49,7 @@ class LoginController: ObservableObject {
         if isValid {
             let defaults = UserDefaults.standard
 
-            Webservice().login(email: login.email, password: login.password) { result in
+            Authservice().login(phone: login.phone, password: login.password) { result in
                 switch result {
                 case .success(let token):
                     defaults.setValue(token, forKey: "jsonwebtoken")
