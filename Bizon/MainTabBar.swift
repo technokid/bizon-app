@@ -5,7 +5,8 @@ import SwiftUI
 struct MainTabBar: View {
     var body: some View {
         TabView {
-            ShopMainScreen(shop: Shop(id: 01, typeOfBussines: .cafe, listOfProducts: [], newsAndDiscount: [], name: "Picolini", address: "Леси Украинки, 34, Киев", deliveryTime: 40, rating: 4.7, cashBack: 5, discount: 10, personalBalance: 345, qrCodeName: "qr", imageName: "picolini"))
+            // Temp Data
+            ShopMainScreen(shop: Shop(id: 01, typeOfBussines: .cafe, listOfProducts: [], newsAndDiscount: [], name: "Picolini", address: "Леси Украинки, 34, Киев", deliveryTime: 40, rating: 3.7, cashBack: 5, discount: 10, personalBalance: 345, qrCodeName: "qr", imageName: "picolini"))
                 .tabItem {
                     VStack {
                         Image(systemName: "house")

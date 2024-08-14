@@ -26,6 +26,7 @@
 		D9D406872C6BE0C100DEB411 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D406862C6BE0C100DEB411 /* Product.swift */; };
 		D9D406892C6BE3FA00DEB411 /* NewsAndDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D406882C6BE3FA00DEB411 /* NewsAndDiscount.swift */; };
 		D9D4068B2C6BE52800DEB411 /* TypeOfBussines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4068A2C6BE52800DEB411 /* TypeOfBussines.swift */; };
+		D9FA65F02C6D07B20046461D /* DashedUnderline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FA65EF2C6D07B20046461D /* DashedUnderline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D9D406862C6BE0C100DEB411 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D9D406882C6BE3FA00DEB411 /* NewsAndDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAndDiscount.swift; sourceTree = "<group>"; };
 		D9D4068A2C6BE52800DEB411 /* TypeOfBussines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfBussines.swift; sourceTree = "<group>"; };
+		D9FA65EF2C6D07B20046461D /* DashedUnderline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedUnderline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,16 +141,17 @@
 		D9778E572C52B8EA00F1B69F /* Bizon */ = {
 			isa = PBXGroup;
 			children = (
-				152A5DF12C53DB5100F63712 /* Info.plist */,
 				152A5DF02C53D8C400F63712 /* Modules */,
 				152A5DEF2C53D8A600F63712 /* Controllers */,
 				152A5DEE2C53D89E00F63712 /* Views */,
 				152A5DED2C53D89400F63712 /* Models */,
 				152A5DEC2C53D88600F63712 /* Services */,
+				D9FA65EE2C6D07510046461D /* Helpers */,
 				D9778E582C52B8EA00F1B69F /* BizonApp.swift */,
 				D9778E5A2C52B8EA00F1B69F /* ContentView.swift */,
 				D9D4067F2C6BBAD400DEB411 /* MainTabBar.swift */,
 				D9778E5C2C52B8F000F1B69F /* Assets.xcassets */,
+				152A5DF12C53DB5100F63712 /* Info.plist */,
 				D9778E5E2C52B8F000F1B69F /* Preview Content */,
 			);
 			path = Bizon;
@@ -168,6 +171,14 @@
 				D9D406822C6BC94500DEB411 /* ShopMainScreen.swift */,
 			);
 			path = ShopMainScreen;
+			sourceTree = "<group>";
+		};
+		D9FA65EE2C6D07510046461D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9FA65EF2C6D07B20046461D /* DashedUnderline.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				D9D406852C6BD62000DEB411 /* Shop.swift in Sources */,
 				1561DA3D2C5985E200F0C50F /* ForgotPasswordView.swift in Sources */,
 				1561DA332C59751300F0C50F /* ProfileController.swift in Sources */,
+				D9FA65F02C6D07B20046461D /* DashedUnderline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
