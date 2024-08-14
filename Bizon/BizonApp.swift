@@ -11,7 +11,8 @@ import SwiftUI
 struct BizonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            MainTabBar()
         }
     }
 }
